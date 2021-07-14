@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
   body {
-    font-family: Ebrima;
+    font-family: 'Open Sans', sans-serif;
     background-color: #D9E6F6;
   }
   #__next {
