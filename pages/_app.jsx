@@ -9,8 +9,8 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
   body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: #D9E6F6;
+    font-family: Rubik, sans-serif;
+    background-color: var(--backgroundPrimary);
   }
   #__next {
     display: flex;

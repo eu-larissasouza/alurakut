@@ -62,7 +62,7 @@ export default function Home() {
         </div>
         <div className="welcomeArea" style={{ gridArea: 'welcomeArea' }}>
           <Box>
-            <h1 className="title">Seja bem vindo(a)</h1>
+            <h1 className="title">Seja bem vindo(a) {usuarioLogado}</h1>
 
             <OrkutNostalgicIconSet />
           </Box>
@@ -113,13 +113,13 @@ export default function Home() {
           style={{ gridArea: 'profileRelationsArea' }}
         >
           <ProfileRelationsBoxWrapper>
-            <h2 className="smallTitle">Amigos ({amizades.length})</h2>
+            <h2 className="smallTitle">Meus Amigos ({amizades.length})</h2>
 
             <ul>
               {amizades.map((itemAtual) => {
                 return (
                   <li key={itemAtual}>
-                    <a href={`/users/${itemAtual}`}>
+                    <a href={`https://github.com/${itemAtual}`}>
                       <img src={`https://github.com/${itemAtual}.png`} />
                       <span>{itemAtual}</span>
                     </a>

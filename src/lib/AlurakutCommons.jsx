@@ -21,7 +21,7 @@ export function AlurakutMenu({ githubUser }) {
   return (
     <AlurakutMenu.Wrapper isMenuOpen={isMenuOpen}>
       <div className="container">
-        <AlurakutMenu.Logo src={`${BASE_URL}/logo.svg`} />
+        <AlurakutMenu.Logo src={`.../img/elements/logo.svg`} />
 
         <nav style={{ flex: 1 }}>
           {[
@@ -58,7 +58,7 @@ export function AlurakutMenu({ githubUser }) {
 }
 AlurakutMenu.Wrapper = styled.header`
   width: 100%;
-  background-color: #308bc5;
+  background-image: linear-gradient(to right, #7d37ff, #ad38fe, #cd86ff);
 
   .alurakutMenuProfileSidebar {
     background: white;
@@ -101,7 +101,7 @@ AlurakutMenu.Wrapper = styled.header`
   }
 
   .container {
-    background-color: #308bc5;
+    background: transparent;
     padding: 7px 16px;
     max-width: 1110px;
     margin: auto;
@@ -150,7 +150,7 @@ AlurakutMenu.Wrapper = styled.header`
     }
     input {
       color: #ffffff;
-      background: #5579a1;
+      background: #705c92;
       padding: 10px 42px;
       border: 0;
       background-image: url(${`${BASE_URL}/icons/search.svg`});
@@ -354,7 +354,7 @@ OrkutNostalgicIconSet.List = styled.ul`
 // ================================================================================================================
 const AlurakutLoginScreen = css`
   :root {
-    --backgroundPrimary: #d9e6f6;
+    --backgroundPrimary: #e5beff;
     --backgroundSecondary: #f1f9fe;
     --backgroundTertiary: #ffffff;
     --backgroundQuarternary: #bbcde8;
