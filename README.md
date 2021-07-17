@@ -1,84 +1,65 @@
-# Example app with styled-components
+# Devkut! - Imersão React (Edição 3.0)
 
-This example features how you use a different styling solution than [styled-jsx](https://github.com/vercel/styled-jsx) that also supports universal styles. That means we can serve the required styles for the first render within the HTML and then load the rest in the client. In this case we are using [styled-components](https://github.com/styled-components/styled-components).
+<h3 align="center">Desenvolvido durante a Imersão React da <a href="https://www.alura.com.br/">Alura</a>, edição AluraKut</h3>
 
-For this purpose we are extending the `<Document />` and injecting the server side rendered styles into the `<head>`, and also adding the `babel-plugin-styled-components` (which is required for server side rendering). Additionally we set up a global [theme](https://www.styled-components.com/docs/advanced#theming) for styled-components using NextJS custom [`<App>`](https://nextjs.org/docs/advanced-features/custom-app) component.
+<p align="justify">Uma viagem ao passado da web para programar o seu futuro, relembrando o velho e conhecido Orkut que marcou a vida de várias gerações, expandindo o conhecimento de JavaScript e desenvolvendo projetos de front-end com a biblioteca React.
+</p>
 
-## Preview
+**Instrutores**: [Juliana Negreiros](https://github.com/juunegreiros),
+[Mario Souto](https://github.com/omariosouto) e
+[Paulo Silveira](https://github.com/peas)
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+<p align="center">
+  <img  width='400' src='https://www.alura.com.br/assets/img/imersoes/imersao-react/logo-imersao-react-header.1623772240.svg'>
+</p>
+<br>
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-styled-components)
+## Projeto: DevKut
 
-## Deploy your own
+<p align="center">
+   <a href="https://www.instagram.com/_larissa.a.souza">
+  <img src="https://img.shields.io/badge/-Made%20By%20Larissa%20Souza%20-8337FF?style=for-the-badge&logoColor=white" alt =" Made by Larissa Souza " target="_blank">
+  </a>
+  <a href="https://reactjs.org">
+  <img src="https://img.shields.io/badge/-React-20232a?style=for-the-badge&logo=React&logoColor=61dafb" alt =" React " target="_blank">
+    </a>
+  <a href="https://alurakut-eu-larissasouza.vercel.app">
+   <img width='400' src="https://images.ctfassets.net/ucp6tw9r5u7d/58whZ9fuYern2P52JkwhQt/867c527d709d3968d216b691f31b6c75/Voc___pede_opini__o_s___para_quem_concorda_com_voc__.jpg" alt =" Screen Layout " target="_blank">
+    </a>
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+</p>
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-styled-components&project-name=with-styled-components&repository-name=with-styled-components)
+### Escopo
 
-## How to use
+A ideia é desenvolver aplicação front-end que será uma rede social inspirada no Orkut clássico, relembrando o passado da tecnologia, utilizando o **React** como principal ferramenta, juntamente com o framework **NextJS** e **Styled Components**, e por fim, usando o **Vercel** para fazer o Deploy do projeto. .
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+### Layout
 
-```bash
-npx create-next-app --example with-styled-components with-styled-components-app
-# or
-yarn create next-app --example with-styled-components with-styled-components-app
-```
+Você encontra nos links abaixo o layout do projeto web e também do mobile fornecido pela <a href="https://www.alura.com.br/">Alura</a> na Imersão, além de um layout especial com certas modificações na versão original feitas por mim com intuito de deixar o projeto mais a minha cara. Lembrando que você precisa ter uma conta no [Figma](http://figma.com/) para ver todos os detalhes.
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+- [Layout Original - Alurakut](https://www.figma.com/file/xHF0n0qxiE2rqjqAILiBUB/Alurakut?node-id=58%3A0)
+- [Layout Devkut](https://www.figma.com/file/w3mXyDS4vEnTnT7KRJ3ty7/DevKut?node-id=58%3A0)
 
-### Try it on CodeSandbox
+## Ações que você pode ter com esse projeto
 
-[Open this example on CodeSandbox](https://codesandbox.io/s/github/vercel/next.js/tree/canary/examples/with-styled-components)
+### Clone this project
 
-### Notes
+git clone https://github.com/eu-larissasouza/devkut.git
 
-When wrapping a [Link](https://nextjs.org/docs/api-reference/next/link) from `next/link` within a styled-component, the [as](https://styled-components.com/docs/api#as-polymorphic-prop) prop provided by `styled` will collide with the Link's `as` prop and cause styled-components to throw an `Invalid tag` error. To avoid this, you can either use the recommended [forwardedAs](https://styled-components.com/docs/api#forwardedas-prop) prop from styled-components or use a different named prop to pass to a `styled` Link.
+### Change folder this project
 
-<details>
-<summary>Click to expand workaround example</summary>
-<br />
+cd ./devkut
 
-**components/StyledLink.js**
+In the project directory, you can run:
 
-```javascript
-import Link from 'next/link'
-import styled from 'styled-components'
+### npm install
 
-const StyledLink = ({ as, children, className, href }) => (
-  <Link href={href} as={as} passHref>
-    <a className={className}>{children}</a>
-  </Link>
-)
+Para instalar todas as dependencias do projeto
 
-export default styled(StyledLink)`
-  color: #0075e0;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
+### Run
 
-  &:hover {
-    color: #40a9ff;
-  }
+yarn dev
 
-  &:focus {
-    color: #40a9ff;
-    outline: none;
-    border: 0;
-  }
-`
-```
+<hr>
 
-**pages/index.js**
-
-```javascript
-import StyledLink from '../components/StyledLink'
-
-export default () => (
-  <StyledLink href="/post/[pid]" forwardedAs="/post/abc">
-    First post
-  </StyledLink>
-)
-```
-
-</details>
+Feito com ♥ by <strong><a href="edin.com/in/larissa-a-souza/">Larissa Souza, </a></strong>

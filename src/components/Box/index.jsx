@@ -10,7 +10,7 @@ const Box = styled.div`
   margin-bottom: 10px;
   .boxLink {
     font-size: 14px;
-    color: #2e7bb4;
+    color: #1b0641;
     text-decoration: none;
     font-weight: 800;
   }
@@ -51,11 +51,12 @@ const Box = styled.div`
     }
   }
   button {
+    font-family: 'Roboto', sans-serif;
     border: 0;
     padding: 8px 12px;
     color: #ffffff;
     border-radius: 10000px;
-    background-color: #6f92bb;
+    background-color: #8b68c6;
   }
 `;
 

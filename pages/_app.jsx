@@ -8,8 +8,8 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
-  body {
-    font-family: Rubik, sans-serif;
+  body, input{
+    font-family: 'Roboto', sans-serif;
     background-color: var(--backgroundPrimary);
   }
   #__next {

@@ -88,12 +88,11 @@ AlurakutMenu.Wrapper = styled.header`
     }
     .boxLink {
       font-size: 18px;
-      color: #2e7bb4;
+      color: #1b0641;
       -webkit-text-decoration: none;
       text-decoration: none;
       font-weight: 800;
     }
-
     hr {
       margin-top: 12px;
       margin-bottom: 8px;
@@ -101,9 +100,8 @@ AlurakutMenu.Wrapper = styled.header`
       border-bottom-color: #ecf2fa;
     }
   }
-
   .container {
-    background: transparent;
+    background-color: transparent;
     padding: 7px 16px;
     max-width: 1110px;
     margin: auto;
@@ -114,7 +112,6 @@ AlurakutMenu.Wrapper = styled.header`
     @media (min-width: 860px) {
       justify-content: flex-start;
     }
-
     button {
       border: 0;
       background: transparent;
@@ -124,7 +121,6 @@ AlurakutMenu.Wrapper = styled.header`
         display: none;
       }
     }
-
     nav {
       display: none;
       @media (min-width: 860px) {
@@ -138,7 +134,7 @@ AlurakutMenu.Wrapper = styled.header`
         text-decoration: none;
         &:after {
           content: ' ';
-          background-color: #5292c1;
+          background-color: #613aa3;
           display: block;
           position: absolute;
           width: 1px;
@@ -152,7 +148,7 @@ AlurakutMenu.Wrapper = styled.header`
     }
     input {
       color: #ffffff;
-      background: #705c92;
+      background: #613aa3;
       padding: 10px 42px;
       border: 0;
       background-image: url(${`${BASE_URL}/icons/search.svg`});
@@ -170,7 +166,7 @@ AlurakutMenu.Wrapper = styled.header`
 AlurakutMenu.Logo = styled.img`
   background-color: #ffffff;
   padding: 9px 14px;
-  border-radius: 1000px;
+  border-radius: 26px;
   height: 34px;
 `;
 
@@ -185,7 +181,7 @@ function AlurakutMenuProfileSidebar({ githubUser }) {
         <hr />
         <p>
           <a className="boxLink" href={`/user/${githubUser}`}>
-            @{githubUser}
+            {githubUser}
           </a>
         </p>
         <hr />
@@ -203,26 +199,26 @@ export function AlurakutProfileSidebarMenuDefault() {
   return (
     <AlurakutProfileSidebarMenuDefault.Wrapper>
       <nav>
-        <a href="/">
+        <a href="https://www.instagram.com/_larissa.a.souza">
           <img src={`${BASE_URL}/icons/user.svg`} />
           Perfil
         </a>
-        <a href="/">
+        <a href="https://www.instagram.com/p/CNc2HpFLGUx/">
           <img src={`${BASE_URL}/icons/book.svg`} />
           Recados
         </a>
-        <a href="/">
+        <a href="https://www.instagram.com/p/CRNAlyIrMLb/">
           <img src={`${BASE_URL}/icons/camera.svg`} />
           Fotos
         </a>
-        <a href="/">
+        <a href="https://www.instagram.com/reel/CNQr6kzgzW-/">
           <img src={`${BASE_URL}/icons/sun.svg`} />
           Depoimentos
         </a>
       </nav>
       <hr />
       <nav>
-        <a href="/">
+        <a href="https://github.com/eu-larissasouza/UriOnlineJudge-Solutions">
           <img src={`${BASE_URL}/icons/plus.svg`} />
           GitHub Trends
         </a>
@@ -237,7 +233,7 @@ export function AlurakutProfileSidebarMenuDefault() {
 AlurakutProfileSidebarMenuDefault.Wrapper = styled.div`
   a {
     font-size: 12px;
-    color: #2e7bb4;
+    color: #8337ff;
     margin-bottom: 16px;
     display: flex;
     align-items: center;
@@ -289,7 +285,7 @@ export function OrkutNostalgicIconSet(props) {
         { name: 'Legal', slug: 'legal', icon: 'cool' },
         { name: 'Sexy', slug: 'sexy', icon: 'heart' },
       ].map(({ name, slug, icon }) => {
-        const total = props[slug] ? props[slug] : 2;
+        const total = props[slug] ? props[slug] : props.statusLevel;
         return (
           <li key={`orkut__icon_set__${slug}`}>
             <span className="OrkutNostalgicIconSet__title">{name}</span>
@@ -326,7 +322,7 @@ OrkutNostalgicIconSet.List = styled.ul`
   flex-wrap: wrap;
   li {
     font-size: 12px;
-    color: #5a5a5a;
+    color: #464646;
     display: grid;
     grid-template-areas:
       'title title'
@@ -359,11 +355,11 @@ const AlurakutLoginScreen = css`
     --backgroundPrimary: #e5beff;
     --backgroundSecondary: #f1f9fe;
     --backgroundTertiary: #ffffff;
-    --backgroundQuarternary: #bbcde8;
-    --colorPrimary: #2e7bb4;
-    --colorSecondary: #388bb0;
-    --colorTertiary: #2f4a71;
-    --colorQuarternary: #d81d99;
+    --backgroundQuarternary: #f4f4f4;
+    --colorPrimary: #6612ee;
+    --colorSecondary: #1b0641;
+    --colorTertiary: #a638fe;
+    --colorQuarternary: #8337ff;
     --textPrimaryColor: #333333;
     --textSecondaryColor: #ffffff;
     --textTertiaryColor: #5a5a5a;
@@ -415,8 +411,9 @@ const AlurakutLoginScreen = css`
         }
       }
       img {
-        max-height: 45px;
-        margin-bottom: 36px;
+        height: 60px;
+        max-height: 60px;
+        margin-bottom: 20px;
       }
     }
     .formArea {
