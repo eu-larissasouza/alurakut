@@ -25,7 +25,7 @@
     </a>
     <br>
   <a href="https://devkut-purple.vercel.app/login">
-   <img width='400' src="https://raw.githubusercontent.com/eu-larissasouza/devkut/main/img/screens/DevKut_Screenshoot.png" alt =" Screen Layout " target="_blank">
+   <img width='400' src="https://github.com/eu-larissasouza/devkut/blob/main/img/screens/DevKut_Screenshoot.png?raw=true" alt =" Screen Layout " target="_blank">
     </a>
 
 </p>
