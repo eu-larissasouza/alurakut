@@ -23,8 +23,9 @@
   <a href="https://reactjs.org">
   <img src="https://img.shields.io/badge/-React-20232a?style=for-the-badge&logo=React&logoColor=61dafb" alt =" React " target="_blank">
     </a>
-  <a href="https://alurakut-eu-larissasouza.vercel.app">
-   <img width='400' src="https://images.ctfassets.net/ucp6tw9r5u7d/58whZ9fuYern2P52JkwhQt/867c527d709d3968d216b691f31b6c75/Voc___pede_opini__o_s___para_quem_concorda_com_voc__.jpg" alt =" Screen Layout " target="_blank">
+    <br>
+  <a href="https://devkut-purple.vercel.app/login">
+   <img width='400' src="https://raw.githubusercontent.com/eu-larissasouza/devkut/main/img/screens/DevKut_Screenshoot.png" alt =" Screen Layout " target="_blank">
     </a>
 
 </p>
@@ -42,21 +43,21 @@ Você encontra nos links abaixo o layout do projeto web e também do mobile forn
 
 ## Ações que você pode ter com esse projeto
 
-### Clone this project
+### `Clone this project`
 
 git clone https://github.com/eu-larissasouza/devkut.git
 
-### Change folder this project
+### `Change folder this project`
 
 cd ./devkut
 
 In the project directory, you can run:
 
-### npm install
+### `npm install`
 
 Para instalar todas as dependencias do projeto
 
-### Run
+### `Run`
 
 yarn dev
 
